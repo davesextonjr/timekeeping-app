@@ -11,6 +11,8 @@ router.get('/', (req, res) => {
 })
 
 router.get('/:day', (req, res) => {
-    console.log(req.params)
-    res.send('Times of a specific day')
+    const {day} = req.params
+    res.send(`You want to see times for ${day}`)
 })
+
+module.exports = router
