@@ -3,8 +3,12 @@ const cors = require('cors');
 const app = express();
 const port = 3000;
 
-app.use(cors());
+const corsOptions = {
+    methods:'GET,HEAD,PUT,PATCH,POST,DELETE',
+    credentials: true,
+}
 
+app.use(cors(corsOptions));
 
 
 
