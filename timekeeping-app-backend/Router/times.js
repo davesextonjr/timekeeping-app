@@ -7,7 +7,7 @@ router.use((req, res, next) => {
 })
 
 router.get('/', (req, res) => {
-    res.send('Times home page')
+    res.send({'times': 'display times here'})
 })
 
 router.get('/:day', (req, res) => {
